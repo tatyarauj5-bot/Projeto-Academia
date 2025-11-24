@@ -1,5 +1,4 @@
--- CRIAÇÃO DO BANCO DE DADOS DA ACADEMIA
--- Atividade 4: Implementação do Modelo Físico
+-- SEÇÃO DDL (DATA DEFINITION LANGUAGE) - CRIAÇÃO DE TABELAS
 
 -- 1. Tabela ALUNO
 CREATE TABLE Aluno (
@@ -36,7 +35,6 @@ CREATE TABLE Matricula (
     ID_Plano INT NOT NULL,
     Data_Matricula DATE NOT NULL,
     Data_Fim DATE,
-    -- Definição das Chaves Estrangeiras (Ligando as tabelas)
     FOREIGN KEY (ID_Aluno) REFERENCES Aluno(ID_Aluno),
     FOREIGN KEY (ID_Instrutor) REFERENCES Instrutor(ID_Funcionario),
     FOREIGN KEY (ID_Plano) REFERENCES Plano(ID_Plano)
@@ -49,7 +47,7 @@ CREATE TABLE Pagamento (
     Data_Vencimento DATE NOT NULL,
     Data_Pagamento DATE,
     Valor_Pago DECIMAL(10, 2),
-    Estado VARCHAR(20), -- Ex: Pago, Pendente
+    Estado VARCHAR(20),
     FOREIGN KEY (ID_Matricula) REFERENCES Matricula(ID_Matricula)
 );
 
