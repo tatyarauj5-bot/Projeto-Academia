@@ -1,4 +1,4 @@
-# 🏋 Projeto de Banco de Dados: Sistema de Gestão de Academia
+# Projeto de Banco de Dados: Sistema de Gestão de Academia
 
 Este repositório contém o Modelo Físico (SQL) para o sistema de gestão de academia, desenvolvido como parte da Atividade 4 da disciplina de Banco de Dados.
 
